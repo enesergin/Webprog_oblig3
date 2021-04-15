@@ -1,6 +1,7 @@
 function sjekkInput(){
     let input="";
     let tekst= "Skriv noe inn i feltet";
+    let tekst2="Skriv et tall i feltet";
 
     $("#filmInput").html(input);
     $("#antallInput").html(input);
@@ -14,7 +15,7 @@ function sjekkInput(){
             $("#filmInput").html(tekst);
         }
         if ($("#antall").val() === "") {
-            $("#antallInput").html(tekst);
+            $("#antallInput").html(tekst2);
         }
         if ($("#fornavn").val() === "") {
             $("#fornavnInput").html(tekst);
@@ -23,7 +24,7 @@ function sjekkInput(){
             $("#etternavnInput").html(tekst);
         }
         if ($("#telefon").val() === "") {
-            $("#telefonInput").html(tekst);
+            $("#telefonInput").html(tekst2);
         }
         if ($("#email").val() === "") {
             $("#emailInput").html(tekst);

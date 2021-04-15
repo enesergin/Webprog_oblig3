@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig 3</title>
+</head>
+<body class="bg-light">
+<h1 style="margin-top: 10px;margin-bottom:10px;">Bestilling av Kinobilletter</h1>
+<table class="table">
+    <tr>
+        <td>
+            <div>
+                <label for="film">Velg film - </label>
+                <select name="film" id="film">
+                    <option value="Velg film"> Velg film her</option>
+                    <option value="Sannheten">Sannheten </option>
+                    <option value="Bien Maja og det gylne egg">Bien Maja og det gylne egg </option>
+                    <option value="The Marksman">The Marksman </option>
+                    <option value="Hedersgjesten">Hedersgjesten </option>
+                    <option value="Notting Hill">Notting Hill </option>
+                </select>
+                <label id="filmInput"></label>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div>
+                <label for="antall">Antall - </label>
+                <input type="number" id="antall" name="antall" min="1">
+                <label id="antallInput"></label>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div>
+                <label for="fornavn">Fornavn - </label>
+                <input type="text" id="fornavn" name="fornavn">
+                <label id="fornavnInput"></label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <label for="etternavn">Etternavn - </label>
+                <input type="text" id="etternavn" name="etternavn">
+                <label id="etternavnInput"></label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <label for="telefon">Telefonnr - </label>
+                <input type="text" id="telefon" name="telefon">
+                <label id="telefonInput"></label>
+            </div>
+        </td>
+    </tr>s
+    <tr>
+        <td>
+            <div>
+                <label for="email">Epost - </label>
+                <input type="text" id="email" name="email">
+                <label id="emailInput"></label>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<button style="margin-top: 10px;margin-bottom:10px;" class="btn btn-success" type="reset" onclick="sjekkInput()">Kjøp Billett</button>
+<h3 style="margin-top: 10px;margin-bottom:10px;">Antall Billetter</h3>
+<div id="visKunder"></div>
+<button style="margin-top: 10px;margin-bottom:10px;" class="btn btn-danger" id="slett" onclick="slettBilletter()">Slett Billetter</button>
+</body>
+</html>
